@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>{% block title %} Fairtrade Rewards {% endblock %}</title>
 
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href='{% static "/styles/index.css" %}'/>
+    {% load sass_tags %}
+    <link rel="stylesheet" type="text/css" href='{% sass_src "styles/index.scss" %}'/>
   </head>
 
   <body>

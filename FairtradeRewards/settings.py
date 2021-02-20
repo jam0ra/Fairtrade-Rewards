@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sass_processor'
 ]
 
 MIDDLEWARE = [
@@ -122,5 +123,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
   BASE_DIR / "static",
 )
+
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+SASS_PROCESSOR_ROOT = BASE_DIR / 'static'
