@@ -26,7 +26,7 @@ FairXChange is a loyalty points system, tailored to fair trade friendly products
 
 
 ## Challenges we Faced ##
-- A
+X,Y,Z
 
 ## What we learned ##
 X,Y,Z
