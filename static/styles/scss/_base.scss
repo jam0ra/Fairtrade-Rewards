@@ -41,7 +41,7 @@ button {
 	}
 
 	&.large {
-		padding: 0.8rem 1.2rem;
+		font-size: 1rem;
 	}
 }
 
@@ -81,15 +81,8 @@ footer {
 	}
 }
 
-.shine {
-	background: radial-gradient(100% 50% at 50% 50%,
-		rgba(#FFD127, 0.7) 0%, 
-		transparent 100%
-	);
-}
-
 #map {
 	@extend .header-image;
-	height: 80vh;
+	height: 45vh;
 	max-height: none;
 }

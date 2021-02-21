@@ -4,34 +4,28 @@
 
 {% block content %}
 
-<div id='login'>
-    <div class='container'>
-        <form method = "post">
-            <h1 class='label'>
-                <span style='color: var(--primary-blue);'>FairTrade </span>
-                <span style='color: var(--primary-green);'>Log in </span>
-            <h1>
-
-            {% csrf_token %}
-        
-            {{ form.non_field_errors }}
-            <div class="form-group">
-        
-                <label for="{{ form.username.id_for_label }}">Username:</label>
-                {{ form.username }}
-                {{ form.username.errors }}
-        
-            </div>
-            <div class="form-group">
-        
-                <label for="{{ form.password.id_for_label }}">Password:</label>
-                {{ form.password }}
-                {{ form.password.errors }}
-            </div>
-            <button type="submit">Login</button>
-            <a class='form-sublink' href="{% url 'password_reset' %}">Forgot your password?</a>
-        </form>
-    </div>
+<div class='container'>
+    <h2> Log in <h2>
+    <form method = "post">
+        {% csrf_token %}
+    
+        {{ form.non_field_errors }}
+        <div class="form-group">
+    
+            <label for="{{ form.username.id_for_label }}">Username:</label>
+            {{ form.username }}
+            {{ form.username.errors }}
+    
+        </div>
+        <div class="form-group">
+    
+            <label for="{{ form.password.id_for_label }}">Password:</label>
+            {{ form.password }}
+            {{ form.password.errors }}
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
 </div>
 
 {% endblock %}

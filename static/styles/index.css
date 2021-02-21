@@ -33,7 +33,7 @@ button {
   button:hover {
     background: #f3bf00; }
   button.large {
-    padding: 0.8rem 1.2rem; }
+    font-size: 1rem; }
 
 footer {
   margin-top: 5rem;
@@ -62,11 +62,8 @@ footer {
     .header-image .container a:hover, #map .container a:hover, .header-image .container a:last-child, #map .container a:last-child {
       text-decoration: underline; }
 
-.shine {
-  background: radial-gradient(100% 50% at 50% 50%, rgba(255, 209, 39, 0.7) 0%, transparent 100%); }
-
 #map {
-  height: 80vh;
+  height: 45vh;
   max-height: none; }
 
 :root {
@@ -86,7 +83,7 @@ h3 {
   font-size: 1.4rem; }
 
 /* type components */
-.label, #modal .progress, #donate .initiatives__desc, #points .points-timeline__points, .nav__bottom .container > *, .nav .menu > *, button, .header-image .container a, #map .container a {
+.label, #points .points-timeline__points, .nav__bottom .container > *, .nav .menu > *, button, .header-image .container a, #map .container a {
   text-transform: uppercase;
   font-family: 'Oswald';
   font-weight: bold;
@@ -99,9 +96,6 @@ h3 {
 
 .small {
   font-size: 0.8rem; }
-
-.large {
-  font-size: 1.2rem; }
 
 /* Layout Elems */
 .container {
@@ -154,7 +148,7 @@ h3 {
     color: rgba(255, 255, 255, 0.6);
     padding: 0.8rem 0;
     overflow: hidden; }
-    .nav__top .label, .nav__top #modal .progress, #modal .nav__top .progress, .nav__top #donate .initiatives__desc, #donate .nav__top .initiatives__desc, .nav__top #points .points-timeline__points, #points .nav__top .points-timeline__points, .nav__top .nav__bottom .container > *, .nav__bottom .nav__top .container > *, .nav__top .header-image .container a, .header-image .container .nav__top a, .nav__top #map .container a, #map .container .nav__top a, .nav__top button, .nav__top .nav .menu > *, .nav .nav__top .menu > * {
+    .nav__top .label, .nav__top #points .points-timeline__points, #points .nav__top .points-timeline__points, .nav__top .nav__bottom .container > *, .nav__bottom .nav__top .container > *, .nav__top .header-image .container a, .header-image .container .nav__top a, .nav__top #map .container a, #map .container .nav__top a, .nav__top button, .nav__top .nav .menu > *, .nav .nav__top .menu > * {
       font-size: 0.75rem; }
     .nav__top .container {
       display: flex;
@@ -165,30 +159,6 @@ h3 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); }
 
 /* page layouts */
-#login form {
-  background: white;
-  border-radius: 8px;
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem 3rem 3rem; }
-  #login form .form-group {
-    font-size: 1.2rem; }
-    #login form .form-group label {
-      display: block;
-      margin: 0.8rem 0 0.3rem;
-      font-size: 1rem; }
-    #login form .form-group input {
-      width: 100%;
-      border: 1px solid lightgray;
-      padding: 1rem; }
-  #login form .form-sublink {
-    font-size: 0.8rem;
-    opacity: 0.8; }
-  #login form button[type='submit'] {
-    margin-top: 1.4rem;
-    font-size: 1.2rem;
-    padding: 0.8rem 3rem; }
-
 #home {
   display: flex;
   flex-wrap: wrap; }
@@ -284,94 +254,5 @@ h3 {
   #points .incentive__content {
     flex: 1;
     padding: 1rem; }
-
-#donate .initiatives {
-  display: flex;
-  margin: 0 -0.5rem; }
-  #donate .initiatives__item {
-    flex: 1;
-    margin: 0 0.5rem;
-    position: relative; }
-    #donate .initiatives__item img {
-      width: 100%; }
-  #donate .initiatives__desc {
-    font-size: 1.2rem;
-    padding: 2.8rem 1.4rem 1.4rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
-    color: white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  #donate .initiatives__progress {
-    margin-top: 0.6rem;
-    padding-top: 0.6rem;
-    display: flex;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); }
-    #donate .initiatives__progress > * {
-      position: relative; }
-      #donate .initiatives__progress > *::before {
-        content: 'pts';
-        font-size: 0.6em;
-        position: absolute;
-        top: 4px;
-        left: 105%; }
-      #donate .initiatives__progress > *::after {
-        content: 'Raised';
-        display: block;
-        font-size: 0.8rem;
-        margin-top: 0.2rem; }
-    #donate .initiatives__progress > *:last-child {
-      margin-left: 2rem; }
-      #donate .initiatives__progress > *:last-child::after {
-        content: 'goal'; }
-
-#modal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 10; }
-  #modal .scroll-container {
-    overflow-y: scroll;
-    height: 100vh; }
-  #modal .content-container {
-    margin: 4rem auto;
-    padding: 3rem 2rem;
-    background: white;
-    font-family: Georgia, 'Times New Roman', Times, serif; }
-    #modal .content-container .drop-cap {
-      float: left;
-      line-height: 85%;
-      margin-right: 0.2em;
-      width: .7em;
-      font-size: 400%;
-      font-family: georgia; }
-  #modal .progress {
-    font-size: 1.6rem;
-    line-height: 1;
-    display: flex;
-    margin: 0.6rem 0 1.2rem;
-    padding: 0.6rem 0 1.2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-    #modal .progress > * {
-      position: relative; }
-      #modal .progress > *::before {
-        content: 'pts';
-        font-size: 0.6em;
-        position: absolute;
-        top: 4px;
-        left: 105%; }
-      #modal .progress > *::after {
-        content: 'Raised';
-        display: block;
-        font-size: 0.8rem;
-        margin-top: 0.2rem; }
-    #modal .progress > *:last-child {
-      margin-left: 3rem; }
-      #modal .progress > *:last-child::after {
-        content: 'goal'; }
 
 /*# sourceMappingURL=index.css.map */

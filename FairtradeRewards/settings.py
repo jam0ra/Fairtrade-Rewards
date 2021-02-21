@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import mimetypes
-import django_heroku
 mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'aih003hf_1*gn=%n03$lkyo#r9g3=ap8gcj!ul7uilan4-i-de'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["fairtrade-rewards.herokuapp.com", "127.0.0.1", "localhost"]
 
@@ -138,5 +137,3 @@ EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
 STATICFILES_DIRS = [
     "static"
 ]
-
-django_heroku.settings(locals())

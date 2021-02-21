@@ -22,7 +22,7 @@
           </div>
 
           <div class='menu' style='flex: 1'>
-            <a href='#'>Back to main site</a>
+            <a href='#'>Back to official site</a>
             {% block nav_top %} {% endblock %}
           </div>
         </div>
@@ -31,15 +31,7 @@
       <div class='nav__bottom'>
         <div class='container'>
           {% block nav_bottom %} {% endblock %}
-<<<<<<< HEAD
           <div>{{user.username}}</div>
-=======
-          {% if user.is_authenticated %}
-          <div><span class='shine'><span class='label'><i class="fa fa-star" aria-hidden="true"></i> 100 Pts</span></span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;{{ user.username }}</div>
-          {% else %}
-          <div>&nbsp;</div>
-          {% endif %}
->>>>>>> 759e65eb25297e3d9a6f77e94c235d6e91a4adf5
         </div>
       </div>
     </nav>
