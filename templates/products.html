@@ -2,26 +2,16 @@
 {% load static %}
 {% block title %}Home{% endblock %} 
 
-{% block nav_top %}
-    {% if user.is_authenticated %} 
-        <a href="{% url 'logout' %}">Log Out</a>
-    {% else %}
-        <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-{% endblock %}
-
 {% block header %}
-    {% if user.is_authenticated %} 
-        <div class='header-image'>
-            <div class='container'>
-                <div style='background: white'>
-                    <a href='{% url "home" %}'>Home</a>
-                    <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
-                    <a href='#'>Products</a>
-                </div>
+    <div class='header-image'>
+        <div class='container'>
+            <div style='background: white'>
+                <a href='{% url "home" %}'>Home</a>
+                <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
+                <a href='#'>Products</a>
             </div>
         </div>
-    {% endif %}
+    </div>
 {% endblock %}
 
 {% block content %}
