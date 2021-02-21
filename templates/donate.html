@@ -15,7 +15,7 @@
         <div class='header-image'>
             <div class='container'>
                 <div style='background: white'>
-                    <a href='#'>Home</a>
+                    <a href="{% url 'home' %}">Home</a>
                     <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
                     <a href='#'>Donate/Redeem</a>
                 </div>
@@ -25,11 +25,141 @@
 {% endblock %}
 
 {% block content %}
+        {% load static %}
         <div>
-            <h1>"Let’s put those points to use!"</h1>
+            <h1>Let’s put those points to use!</h1>
+            <p class='blurb large' style='margin: 0.4rem 0 1.2rem;'>Hey Justin, here are some community initiatives and fundraisers you can put your Partner Points towards.</p>
     
             <div id='donate'>
-                <button class='large'>View all Initiatives</button>
+                <div class='initiatives' style='margin-top: 1rem'>
+                    <a class='initiatives__item' href='#'>
+                        <img src='http://placehold.it/500x400'/>
+                        <div class='initiatives__desc'>
+                            <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
+
+                            <div class='initiatives__progress'>
+                                <span>4073</span>
+                                <span>10,000</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class='initiatives__item' href='#'>
+                        <img src='http://placehold.it/500x400'/>
+                        <div class='initiatives__desc'>
+                            <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
+
+                            <div class='initiatives__progress'>
+                                <span>4073</span>
+                                <span>10,000</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class='initiatives__item' href='#'>
+                        <img src='http://placehold.it/500x400'/>
+                        <div class='initiatives__desc'>
+                            <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
+
+                            <div class='initiatives__progress'>
+                                <span>4073</span>
+                                <span>10,000</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div style='text-align: center; padding: 1.2rem 0 1rem;'>
+                    <button class='large'>View all Initiatives</button>
+                </div>
+
+                <h1 style='text-align: center; margin-top: 3rem;'>
+                    <div style='display: inline-block; max-width: 40ch;'>
+                        Don’t forget, you can also use your Partner Points to get a discount when buying Fairtrade products! Here’s how it works:
+                    </div>
+                </h1>
+
+                <div style='display: flex; justify-content: stretch; padding: 2rem 0 2rem;'>
+                    <div style='flex: 1; margin-right: 2rem; padding: 2rem; border: 1px solid var(--primary-green); border-radius: 12px;'>
+                        <img style='width: 100%; max-width: 10rem; margin-bottom: 0.4rem;'src='{% static "images/donate-1.png" %}'/>
+                        <div class='blurb large'>
+                            <div class='label'>1. Earn</div>
+                            Earn Partner Points using your Fairtrade card when buying Fairtrade labeled products 
+                        </div>
+                    </div>
+
+                    <div style='flex: 1; margin-right: 2rem; padding: 2rem; border: 1px solid var(--primary-green); border-radius: 12px;''>
+                        <img style='width: 100%; max-width: 10rem;'src='{% static "images/donate-2.png" %}'/>
+                        <div class='blurb large'>
+                            <div class='label'>2. Checkout</div>
+                            At checkout, notify the cashier that you would like to redeem your Fairtrade Partner Points for a discount
+                        </div>
+                    </div>
+
+                    <div style='flex: 1; padding: 2rem; border: 1px solid var(--primary-green); border-radius: 12px;''>
+                        <img style='width: 100%; max-width: 10rem;'src='{% static "images/donate-3.png" %}'/>
+                        <div class='blurb large'>
+                            <div class='label'>3. Be happy</div>
+                            Continue earning and redeeming points, and feel good about knowing you’re shopping the Fairtrade way
+                        </div>
+                    </div>
+                </div>
+
+                <div style='text-align: center; background: var(--primary-green); color: white; border-radius: 12px; padding: 1.4rem;'>
+                    <h3>1 Partner Point = $1 Discount</h3>
+                </div>
             </div>
         </div>
+
+        <div id='modal'>
+            <div class='scroll-container'>
+                <div class='content-container'>
+                    <h2 style='margin-bottom: 1.2rem;'>We’re sending 100 resuable masks to school children in Delhi, India. But we need your help!</h2>
+
+                    <img alt='initiative image' src='https://placehold.it/500x250' style='width: 100%;'/>
+
+                    <div class='progress'>
+                        <span>4073</span>
+                        <span>10,000</span>
+                    </div>
+
+                    <p style='margin-top: 1rem;'><span class='drop-cap'>R</span>ight now, masks are becoming more and more essential as we continue to navigate our daily lives during COVID-19. 
+    There are several strands of evidence supporting the efficacy of masks.
+    
+    One category of evidence comes from laboratory studies of respiratory droplets and the ability of various masks to block them. An experiment using high-speed video found that hundreds of droplets ranging from 20 to 500 micrometers were generated when saying a simple phrase, but that nearly all these droplets were blocked when the mouth was covered by a damp washcloth. Another study of people who had influenza or the common cold found that wearing a surgical mask significantly reduced the amount of these respiratory viruses emitted in droplets and aerosols.
+    
+    We’re one step closer to helping make the world a cleaner, safer one for all, and without the support of individuals like yourself, we wouldn’t be where we are today.
+    
+    Thank you Justin!</p>
+
+                    <br/><p>Sincerely,</p>
+                    <p style='font-size: 1.8rem; font-style:italic;'>Hailey Atwell</p>
+                    <div class='label'>Hailey Atwell, Program Coordinator</div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            (function(){
+                const inits = document.querySelectorAll('.initiatives__item')
+                const modal = document.getElementById('modal')
+
+                modal.style.display = "none";
+
+                function toggleModal() {
+                    if (modal.style.display === "none") {
+                        modal.style.display = "block";
+                    } else {
+                        modal.style.display = "none";
+                    }
+                }
+
+                modal.onclick = toggleModal
+    
+                inits.forEach(function(el) {
+                    el.addEventListener('click', function(e) {
+                        e.preventDefault()
+                        toggleModal()
+                    })
+                })
+            })()
+        </script>
 {% endblock %}
