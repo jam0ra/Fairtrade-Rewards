@@ -44,10 +44,10 @@
         </div>
         
     {% else %}
-    <div style="width: 100%;">
-        <div style="width:48%; float:left; margin: 5px;">
+    <div style="display: flex;">
+        <div style="flex: 5; float:left; padding-right: 3rem">
             <h1>Welcome to FairXChange!</h1>
-            <h3>Get paid, for Fair trade. FairXChange is the rewards card that rewards everyone.</h3>
+            <h3 class='label' style='margin: 0.2rem 0;'>Get <span style='color: var(--primary-blue);'>paid</span>, for <span style='color: var(--primary-blue);'>Fair</span> <span style='color: var(--primary-green);'>Trade!</span><br></span>FairXChange is the rewards card that rewards everyone.</h3> 
             {% comment %} Enter carousel of images here {% endcomment %}
             <br>
             <p style="line-height: 1.5;">
@@ -60,47 +60,50 @@
                 Look for different Fair trade certifier logos around the SFU campus to ensure you are purchasing from trusted organizations. 
                 Fair trades' demand based system allows the consumer to take control and voice their opinion in the production of goods.
             </p>
+            <a href='map.html' style='display: inline-block; margin: 1.2rem 0 2rem'><button class='large'>Find a store near you</button></a>
+            <div>
+                <p>
+                    Log in to view your account. <a class='link' href="{% url 'login' %}">Login here</a> <br>
+                    <span style='margin-top: 0.4rem'>Don't have an account? <a class='link' href="{% url 'signup' %}">Sign up here</a></span>
+                </p>
+            </div>
         </div>
-        <div style="width:45%' float:right; margin: 5px">
-            <img src="{% static 'images/coffee_heart.jpg' %}" width="50%" height="auto" style="padding-top: 10px">
+        <div style="flex: 4">
+            <img src="{% static 'images/coffee_heart.jpg' %}" width="100%" height="auto" style="padding-top: 10px">
         </div>
     </div>
-        <div style="width: 100%; text-align: center;">
-        <a href='map.html'><button style="width: 50%; height:50px; margin:20px 45px 20px 0 ;">Find a store near you</button></a>
-        </div>
-    
-        <div>
-            <p>Log in to view your account <a href="{% url 'login' %}">here</a></p>
-            <p>Don't have an account? Sign up <a href="{% url 'signup' %}">here</a></p>
-        </div>
-        <br>
-        <h2>Getting Started</h2>
-        <div style="width: 100%; margin-top: 20px;">
-            <div style="float: left; width: 33%; text-align: center;">
-                <img src="{% static 'images/one.png'%}" width="50px">
-                <h3 style="margin:10px">Sign Up</h3>
-                <p>Signing up is free! <a href="registration/signup.html">Click here</a> to get started.</p>
-            </div>
-            <div style="float: left; width: 33%; text-align: center;">
-                <img src="{% static 'images/two.png'%}" width="50px">
-                <h3 style="margin:10px">Shop Fair trade</h3>
-                <p>For every dollar you spend on <a href="products.html">Fair trade products</a>, you'll
-                    earn a point. It's that simple!
-                </p>
-            </div>
-            <div style="float: left; width: 33%; text-align: center;">
-                <img src="{% static 'images/three.png'%}" width="50px">
-                <h3 style="margin:10px">Get Rewarded</h3>
-                <p>Exchange your points for discounts off your next purchase, or donate your points to Fairtrade farmers. Either way, its a win-win situation!
-                </p>
+    <br>
 
+    <div style='width: 100%; margin-top: 2rem'>
+        <h2>How it works:</h2>
+    
+        <div style='display: flex; justify-content: stretch; padding: 1rem 0 0;'>
+            <div style='flex: 1; margin-right: 2rem; padding: 2rem; border: 1px solid var(--primary-blue); border-radius: 12px;'>
+                <img style='width: 8rem; margin-bottom: 0.4rem;'src='{% static "images/one.png" %}'/>
+                <div class='blurb large'>
+                    <div class='label'>Register</div>
+                    Signing up is free! <a class='link' href="registration/signup.html">Click here</a> to get started.
+                </div>
             </div>
-            <br style="clear: left;" />
-           </div>
-        <h2>Visit Fairtrade Canada</h2>
-        <h3>For more information, news, or other ways you can help support fair trade!</h3>
-        <iframe src="https://www.fairtrade.ca/" title="Fairtrade Canada" style="width:100%; height:500px">
-        </iframe>
+    
+            <div style='flex: 1; margin-right: 2rem; padding: 2rem; border: 1px solid var(--primary-blue); border-radius: 12px;''>
+                <img style='width: 8rem; margin-bottom: 0.4rem;'src='{% static "images/two.png" %}'/>
+                <div class='blurb large'>
+                    <div class='label'>Shop Fair trade</div>
+                    For every dollar you spend on <a href="products.html">Fair trade products</a>, you'll earn a point. It's that simple!
+                </div>
+            </div>
+    
+            <div style='flex: 1; padding: 2rem; border: 1px solid var(--primary-blue); border-radius: 12px;''>
+                <img style='width: 8rem; margin-bottom: 0.4rem;'src='{% static "images/three.png" %}'/>
+                <div class='blurb large'>
+                    <div class='label'>Rewards!</div>
+                    Exchange your points for discounts off your next purchase, or donate your points to Fairtrade farmers. Either way, its a win-win situation!
+                </div>
+            </div>
+        </div>
+    </div>
+
     {% endif %} 
 {% endblock %}
 
