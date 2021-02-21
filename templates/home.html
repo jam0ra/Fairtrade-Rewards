@@ -2,21 +2,54 @@
 
 {% block title %}Home{% endblock %} 
 
-{% block content%} 
-
-{% if user.is_authenticated %} 
-    Hi {{ user.username }}!
-    <nav>
-    <a href='points.html'><button>Points</button></a>
-    <a href='donate.html'><button>Donate</button></a>
-    <a href='map.html'><button>Map</button></a>
-    </nav>
-    <a href="{% url 'logout' %}">Log Out</a>
+{% block nav_top %}
+    {% if user.is_authenticated %} 
+        <a href="{% url 'logout' %}">Log Out</a>
     {% else %}
-    <a href='map.html'><button>Map</button></a>
-    <p>Log in to view your account <a href="{% url 'login' %}">here</a></p>
-    <p>Don't have an account? Sign up <a href="{% url 'signup' %}">here</a></p>
+        <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+{% endblock %}
 
-{% endif %} 
+{% block header %}
+    {% if user.is_authenticated %} 
+        <div class='header-image' style=''>
+            <div class='container'>
+                Home
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block content%} 
+    {% if user.is_authenticated %} 
+        <h1 style='margin-bottom: 1.5rem;'>Welcome back, {{ user.username }}!</h1>
+
+        <div id='home'>
+            <div style='margin-bottom: 2rem;'>
+                <div class='blurb'>
+                    <span class='label'>You currently have <i class="fa fa-star" aria-hidden="true"></i> 100 points</span>
+                    <br/><br/>
+                    Thank you blurb for joining the partner program.
+    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec vitae posuere odio cursus ac non in sodales. Tortor, consequat, in pulvinar auctor. Libero, dui quis odio proin. Commodo netus sed nulla integer enim aliquet vitae faucibus. Facilisi at volutpat et hendrerit a. Ornare lacus, velit non risus volutpat nulla morbi quis aliquam. Quam arcu arcu ornare vitae. Proin amet tellus purus nunc enim in vitae. Eu quis in feugiat arcu id et lectus tellus.
+                    Arcu nullam malesuada convallis mi velit pretium fringilla sit ut. Vel vulputate quisque congue aliquet nisl volutpat lacus sem turpis. Malesuada ac aenean augue vitae diam.
+                </div>
+            </div>
+
+            <div style='flex: 1; min-width: 350px; padding-left: 3rem;'>
+                <div class='options'>
+                    <a href='points.html'><button>View Partner Points Progress</button></a>
+                    <a href='donate.html'><button>Using Your Partner Points</button></a>
+                    <a href='map.html'><button>Find FairTrade Near Me</button></a>
+                </div>
+            </div>
+        </div>
+        
+    {% else %}
+        <a href='map.html'><button>Map</button></a>
+        <p>Log in to view your account <a href="{% url 'login' %}">here</a></p>
+        <p>Don't have an account? Sign up <a href="{% url 'signup' %}">here</a></p>
+
+    {% endif %} 
 {% endblock %}
 

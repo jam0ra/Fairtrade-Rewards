@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
 
 :root {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 3rem;
+	line-height: 1.35;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2.6rem;
+}
+
+h3 {
+	font-size: 2rem;
 }
 
 /* type components */
@@ -11,4 +27,8 @@
 	font-family: 'Oswald';
 	font-weight: bold;
 	letter-spacing: 0.5px;
+}
+
+button {
+	@extend .label;
 }

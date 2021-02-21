@@ -47,19 +47,12 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6; }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-size: 3rem;
-  line-height: 1.35;
   font-weight: bold; }
 
-h2 {
-  font-size: 2.6rem; }
-
-h3 {
-  font-size: 2rem; }
-
 /* type components */
-.label, #points .points-timeline__points, .nav__bottom .container > *, .nav .menu > *, button {
+.label, .nav__bottom .container > *, .nav .menu > *, button {
   text-transform: uppercase;
   font-family: 'Oswald';
   font-weight: bold;
@@ -74,11 +67,6 @@ h3 {
   @media (min-width: 1400px) {
     .container {
       max-width: 1320px; } }
-.content-container {
-  max-width: 750px;
-  margin: auto;
-  line-height: 1.5; }
-
 .blurb {
   line-height: 1.5;
   max-width: 65ch; }
@@ -116,7 +104,7 @@ h3 {
     color: rgba(255, 255, 255, 0.6);
     padding: 0.8rem 0;
     overflow: hidden; }
-    .nav__top .label, .nav__top #points .points-timeline__points, #points .nav__top .points-timeline__points, .nav__top .nav__bottom .container > *, .nav__bottom .nav__top .container > *, .nav__top button, .nav__top .nav .menu > *, .nav .nav__top .menu > * {
+    .nav__top .label, .nav__top .nav__bottom .container > *, .nav__bottom .nav__top .container > *, .nav__top button, .nav__top .nav .menu > *, .nav .nav__top .menu > * {
       font-size: 0.75rem; }
     .nav__top .container {
       display: flex;
@@ -151,41 +139,5 @@ h3 {
         font-size: 1.2rem;
         padding: 1rem;
         width: 100%; }
-
-#points .points-timeline__points {
-  font-size: 3rem;
-  text-align: center;
-  padding: 3rem 2rem;
-  background: radial-gradient(14% 50% at 50% 50%, rgba(255, 209, 39, 0.7) 0%, transparent 100%); }
-  #points .points-timeline__points::after {
-    content: 'Partner Points';
-    margin-top: 0.4rem;
-    display: block;
-    font-size: 1.3rem; }
-
-#points .points-timeline__timeline {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: relative; }
-  #points .points-timeline__timeline > div::before {
-    content: '';
-    display: block;
-    margin: auto;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    background: white;
-    border: 2px solid #d1d1d1; }
-  #points .points-timeline__timeline::before {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #d1d1d1;
-    position: absolute;
-    top: 0.4rem;
-    left: 0;
-    transform: scaleX(0.98);
-    z-index: -1; }
 
 /*# sourceMappingURL=index.css.map */

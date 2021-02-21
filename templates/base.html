@@ -20,19 +20,28 @@
           </div>
 
           <div class='menu' style='flex: 1'>
-            <a href='#' class='label'>Back to official site</a>
-            <a href='#' class='label'>Login</a>
+            <a href='#'>Back to official site</a>
+            {% block nav_top %} {% endblock %}
           </div>
         </div>
       </div>
 
       <div class='nav__bottom'>
         <div class='container'>
-          <div class='label'>Justin</div>
+          {% block nav_bottom %} {% endblock %}
+          <div>Justin</div>
         </div>
       </div>
     </nav>
+
+    {% block header %} {% endblock %}
     
-    {% block content %} {% endblock %}
+    <div class='container' style='margin-top: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.15); padding-top: 1.5rem;'>
+      {% block content %} {% endblock %}
+    </div>
+
+    <footer>
+      <hr/>
+    </footer>
   </body>
 </html>
