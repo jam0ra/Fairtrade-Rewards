@@ -1,0 +1,28 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+
+/* Colors */
+:root {
+	--primary-blue: #00B9E4;
+	--primary-green: #C3D941;
+	--primary-neutral: #1e1e1e;
+}
+
+/* Base Elements */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+:root {
+	color: var(--primary-neutral);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	background: #f5f5f5;
+}
+
+/* components */

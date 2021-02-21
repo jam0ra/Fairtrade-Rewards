@@ -4,11 +4,35 @@
     <meta charset="utf-8" />
     <title>{% block title %} Fairtrade Rewards {% endblock %}</title>
 
+    {% load static %}
     {% load sass_tags %}
     <link rel="stylesheet" type="text/css" href='{% sass_src "styles/index.scss" %}'/>
   </head>
 
   <body>
-    <main>{% block content %} {% endblock %}</main>
+    <nav class='nav'>
+      <div class='nav__top'>
+        <div class='container'>
+          <img class='logo' alt='logo' src='{% static "images/fairtrade-logo.jpg" %}'/>
+
+          <div class='label' style='margin-left: 6.5rem; color: white;'>
+            Partnership Program
+          </div>
+
+          <div class='menu' style='flex: 1'>
+            <a href='#' class='label'>Back to official site</a>
+            <a href='#' class='label'>Login</a>
+          </div>
+        </div>
+      </div>
+
+      <div class='nav__bottom'>
+        <div class='container'>
+          <div class='label'>Justin</div>
+        </div>
+      </div>
+    </nav>
+    
+    {% block content %} {% endblock %}
   </body>
 </html>

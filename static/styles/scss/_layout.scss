@@ -1,0 +1,74 @@
+/* Layout Elems */
+.container {
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 0.8rem;
+
+	@media (min-width: 1320px) {
+		max-width: 1320px;
+	}
+}
+
+.nav {
+	background: white;
+	position: relative;
+
+	.logo {
+		width: auto;
+		height: 100%;
+		position: absolute;
+		top: 0; bottom: 0;
+	}
+
+	.menu {
+		margin-right: -0.8rem;
+		& > * { 
+			margin: 0;
+			padding: 1rem;
+
+			position: relative;
+			border-left: 1px solid rgba(white, 0.1);
+			border-right: 1px solid rgba(black, 0.5);
+		}
+
+		& > *:not(:last-child) {
+			margin-right: -0.23rem;
+		}
+
+		& > *:last-child::after {
+			content: '';
+			position: absolute;
+			right: -1px;
+			top: 0; bottom: 0;
+
+			width: 1px;
+			background: rgba(white, 0.15);
+		}
+	}
+
+	&__top {
+		text-align: right;
+		background: var(--primary-neutral);
+		color: rgba(white, 0.6);
+		padding: 0.8rem 0;
+		overflow: hidden;
+
+		.label { font-size: 0.75rem; }
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__bottom {
+		text-align: right;
+		padding: 1.5rem 0 1.6rem;
+		box-shadow: 0 4px 20px rgba(black, 0.2);
+	}
+}
+
+#login {
+ 
+}
