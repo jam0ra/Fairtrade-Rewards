@@ -1,19 +1,11 @@
 {% extends 'base.html' %} 
 {% load static %}
 
-{% block title %}Home{% endblock %} 
-
-{% block nav_top %}
-    {% if user.is_authenticated %} 
-        <a href="{% url 'logout' %}">Log Out</a>
-    {% else %}
-        <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block header %}
     {% if user.is_authenticated %} 
-        <div class='header-image'>
+        <div class='header-image' style='background-image: url("/static/images/banner-1.png");'>
             <div class='container'>
                 <div style='background: white'>
                     <!-- <a href='#'>Home</a> -->
@@ -30,8 +22,10 @@
         <div id='home'>
             <div style='margin-bottom: 2rem;'>
                 <div class='blurb'>
-                    <span class='label'>You currently have <i class="fa fa-star" aria-hidden="true"></i> 100 points</span>
-                    <br/><br/>
+                    <div style='margin: 0.8rem 0 0.4rem'>
+                        <span class='label' style='padding: 0.8rem 1.2rem; border: 1px solid black; border-radius: 4px;'>You currently have <span class='shine'><span class='label'><i class="fa fa-star" aria-hidden="true"></i> 78 Pts</span></span></span>
+                    </div>
+                    <br/>
                     Thank you for choosing to support Fair Trade!
                     Through choosing Fair Trade products, you are supporting more ethical and sustainable trading practices. 
                     Look for different Fair Trade certifier logos around the SFU campus to ensure you are purchasing from trusted organizations. 
@@ -67,7 +61,7 @@
                 Fair trades' demand based system allows the consumer to take control and voice their opinion in the production of goods.
             </p>
         </div>
-        <div style="width:45%' float:right; margin: 5px">
+        <div style="width:45%' float:right; margin: 5px;">
             <img src="{% static 'images/coffee_heart.jpg' %}" width="50%" height="auto" style="padding-top: 10px">
         </div>
     </div>

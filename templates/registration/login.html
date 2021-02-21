@@ -28,7 +28,9 @@
                 {{ form.password }}
                 {{ form.password.errors }}
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" style='margin-right: 0.8rem;'>Login</button>
+            <a class='form-sublink' href="{% url 'signup' %}">New user? sign up now</a>
+            <a class='form-sublink' href="#"><span>&middot;</span></a>
             <a class='form-sublink' href="{% url 'password_reset' %}">Forgot your password?</a>
         </form>
     </div>

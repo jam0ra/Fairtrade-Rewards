@@ -7,8 +7,6 @@
     <link rel="icon" href="{% static 'images/fairxchange_circle.png'%}">
     <title>{% block title %} Fairtrade Rewards {% endblock %}</title>
 
-   
-
     <base href="/"> 
     <link rel="stylesheet" type="text/css" href='{% sass_src "styles/index.scss" %}'/>
   </head>
@@ -23,18 +21,22 @@
           
 
           <div class='label' style='margin-left: 6.5rem; color: white;'>
-            <a title="SFU Fairtrade" href="http://www.sfu.ca/fairtrade.html" target="_blank">
+            <a title="SFU Fairtrade" href="{% url 'home' %}"> 
               <img style='width:24px; margin-right:0.2rem; margin-bottom:-1px;' alt='sfu' src='{% static "images/sfu-logo.png" %}'/> Partnership Program
             </a>
           </div>
 
-          <div class='menu' style='flex: 4; margin-right: -20px;'>
-            <a href='about.html'>About Us</a>
-          </div>
-
           <div class='menu' style='flex: 1'>
-            <a href='#'>Back to main site</a>
+            <a href='#'>Back to fairtrade.ca</a>
+            <a href='products.html'>Products</a>
+            <a href='about.html'>About Us</a>
+            <a href='map.html'>Map</a>
             {% block nav_top %} {% endblock %}
+            {% if user.is_authenticated %} 
+                <a href="{% url 'logout' %}">Log Out</a>
+            {% else %}
+                <a href="{% url 'login' %}">Log In</a>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -42,14 +44,17 @@
       <div class='nav__bottom'>
         <div class='container'>
           {% block nav_bottom %} {% endblock %}
-          <div>{{user.username}}</div>
+          <span>&nbsp;</span>
+          {% if user.is_authenticated %}
+          <div><span class='shine'><span class='label'><i class="fa fa-star" aria-hidden="true"></i> 78 Pts</span></span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;{{user.username}}</div>
+          {% endif %}
         </div>
       </div>
     </nav>
 
     {% block header %} {% endblock %}
     
-    <div class='container' style='margin-top: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.15); padding-top: 1.5rem;'>
+    <div class='container' style='margin-top: 2rem; padding-top: 1.5rem;'>
       {% block content %} {% endblock %}
     </div>
 

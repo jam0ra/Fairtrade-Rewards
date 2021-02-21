@@ -2,20 +2,14 @@
 
 {% block title %}Home{% endblock %} 
 
-{% block nav_top %}
-    {% if user.is_authenticated %} 
-        <a href="{% url 'logout' %}">Log Out</a>
-    {% else %}
-        <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-{% endblock %}
-
 {% block header %}
     {% if user.is_authenticated %} 
         <div class='header-image'>
             <div class='container'>
                 <div style='background: white'>
-                    <!-- <a href='#'>Home</a> -->
+                    <a href='{% url "home" %}'>Home</a>
+                    <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
+                    <a href='#'>About Us</a>
                 </div>
             </div>
         </div>
@@ -23,27 +17,19 @@
 {% endblock %}
 
 {% block content %}
-<h3 class='label' style='margin-left:0.5rem; margin-top: 2rem;'>
-    <span style='background: #f5f5f5; display: inline-block;'>
-        About Us
-    </span>
-</h3>
-
-<div class='header-image' style='height: 0; min-height: 0; display:inline-block; margin: 0 -1.4rem 2rem; background: none'>
-    <div class='container'>
-            <div style='background: white'>
-                    <a href='{% url "home" %}'>Home</a>
-                    <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
-                    <a href='#'>About Us</a>
-            </div>
-    </div>
+<div class='content-container'>
+    <h3 class='label'>
+        <span style='background: #f5f5f5; display: inline-block;'>
+            About Us
+        </span>
+    </h3>
+    
+    <h2>Our Mission</h2>
+    <p>FairXChange aims to incentivize and spread awareness about Fairtrade supporting products. TODO: Say stuff about connection</p>
+    <br>
+    <h2>Logo</h2>
+    <p>The logo represents an exchange between a consumer and the producer, with a coffee bean in the center.</p>
+    <br>
+    <h2>Meet the Team!</h2>
 </div>
-
-<h2>Our Mission</h2>
-<p>FairXChange aims to incentivize and spread awareness about Fairtrade supporting products. TODO: Say stuff about connection</p>
-<br>
-<h2>Logo</h2>
-<p>The logo represents an exchange between a consumer and the producer, with a coffee bean in the center.</p>
-<br>
-<h2>Meet the Team!</h2>
 {% endblock %}
