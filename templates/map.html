@@ -10,22 +10,6 @@
     {% endif %}
 {% endblock %}
 
-{% block header %} 
-		{% load static %}
-		<div id="map"></div>
-		<script src="{% static 'js/map.js' %}"></script>
-		<script async
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2Jt7h_rzqsex6iI_Ecx9FHWzleFQiSE&callback=initMap&libraries=&v=weekly"></script>
-		<script type="text/javascript">
-				var fairtrade = "{% static 'images/fairtrade.png' %}";
-				var coffee = "{% static 'images/coffee.jpg' %}";
-				var sfu = "{% static 'images/sfu.png' %}";
-				var renaissance = "{% static 'images/renaissance_coffee.jpeg' %}";
-				var nesters = "{% static 'images/nesters.jpg' %}";
-				var starbucks = "{% static 'images/starbucks.png'%}";
-		</script>
-{% endblock %}
-
 {% block content %}
 	<h3 class='label' style='margin-left:-1rem; margin-top: -2.5rem;'>
 		<span style='background: #f5f5f5; padding: 0 1rem; display: inline-block;'>
@@ -43,3 +27,20 @@
 		</div>
 </div>
 {% endblock %}
+
+{% block header %} 
+		{% load static %}
+		<div id="map"></div>
+		<script src="{% static 'js/map.js' %}"></script>
+		<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2Jt7h_rzqsex6iI_Ecx9FHWzleFQiSE&callback=initMap&libraries=&v=weekly"></script>
+		<script type="text/javascript">
+				var fairtrade = "{% static 'images/fairtrade.png' %}";
+				var coffee = "{% static 'images/coffee.jpg' %}";
+				var sfu = "{% static 'images/sfu.png' %}";
+				var renaissance = "{% static 'images/renaissance_coffee.jpeg' %}";
+				var nesters = "{% static 'images/nesters.jpg' %}";
+				var starbucks = "{% static 'images/starbucks.png'%}";
+		</script>
+{% endblock %}
+
