@@ -50,3 +50,6 @@ python manage.py runserver
 ## Dependencies ##
 - [django-livereload-server](https://github.com/tjwalch/django-livereload-server)
 - [django-sass-processor](https://github.com/jrief/django-sass-processor)
+
+## About ##
+FairXChange was created as part of StormHacks 2021.
