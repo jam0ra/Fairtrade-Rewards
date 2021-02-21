@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-
+{% load static %}
 {% block title %}Home{% endblock %} 
 
 {% block header %}
@@ -25,11 +25,23 @@
     </h3>
     
     <h2>Our Mission</h2>
-    <p>FairXChange aims to incentivize and spread awareness about Fairtrade supporting products. TODO: Say stuff about connection</p>
+    <p>FairXChange aims to incentivize and spread awareness about Fairtrade supporting products. 
+        After attending the SFU Fair Trade workshop and conducting our own research, we felt that Fairtrade truly is a cause we support.
+        By partnering with major credit cards and retailers, our solution creates a one-stop-shop for all things Fairtrade. It tackles the issues of awareness, disconnect, and misconceptions through the building of an online community of those who’ve dedicated themselves to the support of Fairtrade, and rewards those who stand for it and need it most.
+    </p>
     <br>
-    <h2>Logo</h2>
-    <p>The logo represents an exchange between a consumer and the producer, with a coffee bean in the center.</p>
-    <br>
-    <h2>Meet the Team!</h2>
+    <div style="width: 100%; margin-bottom: 40px;">
+        <div style="float:left; width: 70%; ">
+            <h2>Logo</h2>
+            <p>The logo represents an exchange between a consumer and the producer, with a coffee bean in the center.
+                The colours match the Fairtrade logo.</p>
+        </div>
+        <div style="float: right; width: 30%;">
+            <img src="{% static 'images/fairxchange_circle.png'%}" width="100px" style="margin:40px">
+        </div>  
+    </div>
 </div>
+<br>
+<br>
+<br>
 {% endblock %}
