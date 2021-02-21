@@ -62,6 +62,9 @@ footer {
     .header-image .container a:hover, #map .container a:hover, .header-image .container a:last-child, #map .container a:last-child {
       text-decoration: underline; }
 
+.shine {
+  background: radial-gradient(100% 50% at 50% 50%, rgba(255, 209, 39, 0.7) 0%, transparent 100%); }
+
 #map {
   height: 80vh;
   max-height: none; }

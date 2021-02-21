@@ -29,7 +29,11 @@
       <div class='nav__bottom'>
         <div class='container'>
           {% block nav_bottom %} {% endblock %}
-          <div>Justin</div>
+          {% if user.is_authenticated %}
+          <div><span class='shine'><span class='label'><i class="fa fa-star" aria-hidden="true"></i> 100 Pts</span></span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;{{ user.username }}</div>
+          {% else %}
+          <div>&nbsp;</div>
+          {% endif %}
         </div>
       </div>
     </nav>
