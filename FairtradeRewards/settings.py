@@ -26,7 +26,7 @@ SECRET_KEY = 'aih003hf_1*gn=%n03$lkyo#r9g3=ap8gcj!ul7uilan4-i-de'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["fairtrade-rewards.herokuapp.com"]
 
 
 # Application definition
