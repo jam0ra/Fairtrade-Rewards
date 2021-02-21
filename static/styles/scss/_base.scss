@@ -41,7 +41,7 @@ button {
 	}
 
 	&.large {
-		font-size: 1rem;
+		padding: 0.8rem 1.2rem;
 	}
 }
 
@@ -83,6 +83,6 @@ footer {
 
 #map {
 	@extend .header-image;
-	height: 45vh;
+	height: 80vh;
 	max-height: none;
 }
