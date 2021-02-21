@@ -1,12 +1,32 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map</title>
+    
+    <title>SFU Burnaby Fair Trade</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/map.css' %}" />
+    <script src="{% static 'js/map.js' %}"></script>
 </head>
-<body>
-    <h1>Find Fair Trade shops near you</h1>
-</body>
+    <body>
+        <h1>Find Fair Trade shops near you</h1>
+        <h3>SFU Burnaby - Fair Trade Supporting Businesses</h3>
+  
+        <div id="map"></div>
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2Jt7h_rzqsex6iI_Ecx9FHWzleFQiSE&callback=initMap&libraries=&v=weekly"
+        ></script>
+        <script type="text/javascript">
+            var fairtrade = "{% static 'images/fairtrade.png' %}";
+            var coffee = "{% static 'images/coffee.jpg' %}";
+            var sfu = "{% static 'images/sfu.png' %}";
+            var renaissance = "{% static 'images/renaissance_coffee.jpeg' %}";
+            var nesters = "{% static 'images/nesters.jpg' %}";
+            var starbucks = "{% static 'images/starbucks.png'%}";
+
+        </script>
+    </body>
 </html>
