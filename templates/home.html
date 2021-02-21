@@ -50,23 +50,56 @@
         </div>
         
     {% else %}
-        <h1>Welcome to FairXChange</h1>
-        <h3>Get Paid, for Fair Trade</h3>
-        {% comment %} Enter carousel of images here {% endcomment %}
-        <p style="line-height: normal;">
-            Thank you for choosing to support Fair Trade!
-            Through choosing Fair Trade products, you are supporting more ethical and sustainable trading practices. 
-            Look for different Fair Trade certifier logos around the SFU campus to ensure you are purchasing from trusted organizations. 
-            Fair Trades' demand based system allows the consumer to take control and voice their opinion in the production of goods.
-        </p>
-        <img src="{% static 'images/coffee_heart.jpg' %}" width="100%" height="auto" style="padding-top: 10px">
-        <a href='map.html'><button>Find a store near you</button></a>
+    <div style="width: 100%;">
+        <div style="width:45%; float:left; margin: 10px;">
+            <h1>Welcome to FairXChange</h1>
+            <h3>Get Paid, for Fair Trade</h3>
+            {% comment %} Enter carousel of images here {% endcomment %}
+            <p style="line-height: normal;">
+                Thank you for choosing to support Fair Trade!
+                Through choosing Fair Trade products, you are supporting more ethical and sustainable trading practices. 
+                Look for different Fair Trade certifier logos around the SFU campus to ensure you are purchasing from trusted organizations. 
+                Fair Trades' demand based system allows the consumer to take control and voice their opinion in the production of goods.
+            </p>
+        </div>
+        <div style="width:45%' float:right; margin: 10px">
+            <img src="{% static 'images/coffee_heart.jpg' %}" width="50%" height="auto" style="padding-top: 10px">
+        </div>
+    </div>
+        <div style="width: 100%; text-align: center;">
+        <a href='map.html'><button style="width: 50%; height:50px; margin:20px;">Find a store near you</button></a>
+        </div>
+    
         <div>
             <p>Log in to view your account <a href="{% url 'login' %}">here</a></p>
             <p>Don't have an account? Sign up <a href="{% url 'signup' %}">here</a></p>
         </div>
         <br>
-        <h2>Fairtrade Canada</h2>
+        <h2>Getting Started</h2>
+        <div style="width: 100%; margin-top: 20px;">
+            <div style="float: left; width: 33%; text-align: center;">
+                <img src="{% static 'images/one.png'%}" width="50px">
+                <h3 style="margin:10px">Sign Up</h3>
+                <p>Signing up is free! <a href="registration/signup.html">Click here</a> to get started.</p>
+            </div>
+            <div style="float: left; width: 33%; text-align: center;">
+                <img src="{% static 'images/two.png'%}" width="50px">
+                <h3 style="margin:10px">Purchase Fairtrade</h3>
+                <p>For every dollar you spend on <a href="products.html">Fairtrade products</a>, you'll
+                    receive points. It's that simple!
+                </p>
+            </div>
+            <div style="float: left; width: 33%; text-align: center;">
+                <img src="{% static 'images/three.png'%}" width="50px">
+                <h3 style="margin:10px">Get Paid for Fairtrade</h3>
+                <p>Once you collect enough points, you can exchange them for discounts off your next purchase.
+                    Feeling generous? You can pay it forward and donate your points instead!
+                </p>
+
+            </div>
+            <br style="clear: left;" />
+           </div>
+        <h2>Support Fairtrade Canada</h2>
         <iframe src="https://www.fairtrade.ca/" title="Fairtrade Canada" style="width:100%; height:500px">
         </iframe>
     {% endif %} 
