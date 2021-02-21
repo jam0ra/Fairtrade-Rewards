@@ -1,0 +1,31 @@
+{% extends 'base.html' %} 
+
+{% block title %}Home{% endblock %} 
+
+{% block nav_top %}
+    {% if user.is_authenticated %} 
+        <a href="{% url 'logout' %}">Log Out</a>
+    {% else %}
+        <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+{% endblock %}
+
+{% block header %} 
+		{% load static %}
+		<div id="map"></div>
+		<script src="{% static 'js/map.js' %}"></script>
+		<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2Jt7h_rzqsex6iI_Ecx9FHWzleFQiSE&callback=initMap&libraries=&v=weekly"></script>
+		<script type="text/javascript">
+				var fairtrade = "{% static 'images/fairtrade.png' %}";
+				var coffee = "{% static 'images/coffee.jpg' %}";
+				var sfu = "{% static 'images/sfu.png' %}";
+				var renaissance = "{% static 'images/renaissance_coffee.jpeg' %}";
+				var nesters = "{% static 'images/nesters.jpg' %}";
+				var starbucks = "{% static 'images/starbucks.png'%}";
+		</script>
+{% endblock %}
+
+{% block content %}
+<h1>Find Participating Fairtrade Stores</h1>
+{% endblock %}

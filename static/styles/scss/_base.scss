@@ -1,0 +1,88 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+
+/* Colors */
+:root {
+	--primary-blue: #00B9E4;
+	--primary-green: #C3D941;
+	--primary-neutral: #1e1e1e;
+	--secondary: #FFD127;
+}
+
+/* Base Elements */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+:root {
+	color: var(--primary-neutral);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	background: #f5f5f5;
+}
+
+button {
+	padding: 0.3em 0.8em; 
+	border-radius: 4px;
+	background: var(--secondary);
+	border: none;
+	border-bottom: 2px solid darken(#FFD127, 15);
+
+	cursor: pointer;
+	transition: background 0.3s;
+
+	&:hover {
+		background: darken(#FFD127, 10);
+	}
+
+	&.large {
+		font-size: 1rem;
+	}
+}
+
+footer {
+	margin-top: 5rem;
+	padding: 4rem 0 4rem;
+	background: #333;
+	color: rgb(219, 219, 219);
+}
+
+/* components */
+.header-image {
+	width: 100%;
+	height: 35vh;
+	min-height: 200px;
+	max-height: 250px;
+	background: green;
+
+	display: flex;
+	align-items: center;
+	padding: 1rem 0.8rem;
+
+	.container {
+		div {
+			display: inline-block;
+			padding: 0 0.4rem;
+		}
+
+		a {
+			@extend .label;
+			display: inline-block;
+			font-weight: bold;
+			font-size: 1rem;
+			padding: 0.6rem 0.4rem 0.8rem;
+			&:hover, &:last-child { text-decoration: underline; }
+		}
+	}
+}
+
+#map {
+	@extend .header-image;
+	height: 45vh;
+	max-height: none;
+}

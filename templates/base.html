@@ -3,8 +3,85 @@
   <head>
     <meta charset="utf-8" />
     <title>{% block title %} Fairtrade Rewards {% endblock %}</title>
+
+    {% load static %}
+    {% load sass_tags %}
+    <link rel="stylesheet" type="text/css" href='{% sass_src "styles/index.scss" %}'/>
   </head>
+
   <body>
-    <main>{% block content %} {% endblock %}</main>
+    <nav class='nav'>
+      <div class='nav__top'>
+        <div class='container'>
+          <img class='logo' alt='logo' src='{% static "images/fairtrade-logo.jpg" %}'/>
+
+          <div class='label' style='margin-left: 6.5rem; color: white;'>
+            <img style='width:24px; margin-right:0.2rem; margin-bottom:-1px;' alt='sfu' src='{% static "images/sfu-logo.png" %}'/> Partnership Program
+          </div>
+
+          <div class='menu' style='flex: 1'>
+            <a href='#'>Back to official site</a>
+            {% block nav_top %} {% endblock %}
+          </div>
+        </div>
+      </div>
+
+      <div class='nav__bottom'>
+        <div class='container'>
+          {% block nav_bottom %} {% endblock %}
+          <div>Justin</div>
+        </div>
+      </div>
+    </nav>
+
+    {% block header %} {% endblock %}
+    
+    <div class='container' style='margin-top: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.15); padding-top: 1.5rem;'>
+      {% block content %} {% endblock %}
+    </div>
+
+    <footer>
+      <div class='container' style='display: flex; padding-bottom: 3rem;'>
+        <div style='flex: 2; padding-right: 2rem;'>
+          <div class='label' style='color:white; margin-bottom:1rem'>Contact</div>
+          <p class='small'>250 City Centre Ave Suite 800 Ottawa K1R 6K7 Canada</p>
+          <p class='small' style='margin-top: 0.4rem;'>
+            <i><b>T:</b></i> 613-563-3351
+            <i><b>E:</b></i> info@fairtrade.ca
+          </p>
+        </div>
+
+        <div style='flex: 1; padding-right: 2rem;'>
+          <p class='small' style='line-height: 1.5'>Fairtrade is a movement for change that works directly with businesses, consumers and campaigners to make trade fair for farmers and workers. The international Fairtrade system represents the world's largest and most recognized fair trade system. </p>
+        </div>
+
+        <div style='flex: 1; padding-right: 2rem;'>
+          <div class='label' style='color:white; margin-bottom:1rem'>Connect with us</div>
+          <div style='display: flex'>
+            <img style='margin-right: 0.6rem;' src='{% static "images/fb.jpg" %}'/>
+            <img style='margin-right: 0.6rem;' src='{% static "images/twit.jpg" %}'/>
+            <img style='margin-right: 0.6rem;' src='{% static "images/linked.jpg" %}'/>
+            <img style='margin-right: 0.6rem;' src='{% static "images/insta.jpg" %}'/>
+            <img style='margin-right: 0.6rem;' src='{% static "images/tumblr.jpg" %}'/>
+          </div>
+        </div>
+      </div>
+
+      <hr style='opacity: 0.25'/>
+
+      <div class='container' style='padding-top: 1rem;'>
+        <div style='display: flex; color: white; align-items: center;'>
+          <a href='#' class='small' style='font-weight: bold; margin-right: 0.6rem;'>Contact Us</a>
+          <span>|&nbsp;&nbsp;</span>
+          <a href='#' class='small' style='font-weight: bold; margin-right: 0.6rem;'>Sitemap</a>
+          <span>|&nbsp;&nbsp;</span>
+          <a href='#' class='small' style='font-weight: bold; margin-right: 0.6rem;'>Terms of Use</a>
+          <span>|&nbsp;&nbsp;</span>
+          <a href='#' class='small' style='font-weight: bold; margin-right: 0.6rem;'>Privacy Statement</a>
+        </div>
+
+        <p class='small' style='opacity: 0.6; margin-top: 1rem;'>© Fairtrade Canada 2020.</p>
+      </div>
+    </footer>
   </body>
 </html>

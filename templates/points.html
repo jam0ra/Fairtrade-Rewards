@@ -1,0 +1,86 @@
+{% extends 'base.html' %} 
+
+{% block title %}Points{% endblock %} 
+
+{% block nav_top %}
+    {% if user.is_authenticated %} 
+        <a href="{% url 'logout' %}">Log Out</a>
+    {% else %}
+        <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+    {% if user.is_authenticated %} 
+        <div class='header-image' style=''>
+            <div class='container'>
+                <div style='background: white'>
+                    <a href='#'>Home</a>
+                    <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
+                    <a href='#'>Points</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+        <div class='content-container'>
+            <h1 style='text-align: center;'>Great job supporting Fair Trade businesses!</h1>
+    
+            <div id='points'>
+                <div class='points-timeline'>
+                    <div class='points-timeline__points'>
+                        <i class="fa fa-star" style='font-size: 0.6em; vertical-align: middle; margin-right:0.2em' aria-hidden="true"></i>78
+                    </div>
+
+                    <div class='points-timeline__timeline'>
+                        <div class='active'>0</div>
+                        <div class='active'>25</div>
+                        <div class='active'>50</div>
+                        <div class='active'>75</div>
+                        <div>100</div>
+                        <div>150</div>
+                    </div>
+                </div>
+
+                <div class='points-encouragement'>
+                    <i class="fas fa-exclamation-circle"></i>&nbsp;
+                    Keep it up! Since January 2021, you’ve already supported 6 Fairtrade partnered organizations!
+                </div>
+                
+                <p style='margin-top: 2rem;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio consequat aliquam mus tempor. Purus non risus tristique pellentesque pulvinar cursus tincidunt. Enim id lorem posuere dolor. Dictum dui.</p>
+
+                <h2 style='margin-top: 2rem;'>Incentives</h2>
+
+                <div>
+                    <div class='incentive'>
+                        <div><div class='incentive__number'>+10</div></div>
+                        <div class='incentive__content'>
+                            <h3 class='label'>Refer a friend</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio consequat aliquam mus tempor. Purus non risus tristique pellentesque pulvinar cursus tincidunt. Enim id lorem posuere dolor. Dictum dui.
+                            <br/><a class='link' href='#'style='margin-top: 0.3rem;'>Click to join</a>
+                        </div>
+                    </div>
+                    
+                    <div class='incentive'>
+                        <div><div class='incentive__number'>+5</div></div>
+                        <div class='incentive__content'>
+                            <h3 class='label'>Purchase products over $50</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio consequat aliquam mus tempor. Purus non risus tristique pellentesque pulvinar cursus tincidunt. Enim id lorem posuere dolor. Dictum dui.
+                            <br/><a class='link' href='map.html'style='margin-top: 0.3rem;'>View participating stores</a>
+                        </div>
+                    </div>
+
+                    <div class='incentive'>
+                        <div><div class='incentive__number'>+2</div></div>
+                        <div class='incentive__content'>
+                            <h3 class='label'>Purchase products over $10</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio consequat aliquam mus tempor. Purus non risus tristique pellentesque pulvinar cursus tincidunt. Enim id lorem posuere dolor. Dictum dui.
+                            <br/><a class='link' href='map.html' style='margin-top: 0.3rem;'>View participating stores</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
