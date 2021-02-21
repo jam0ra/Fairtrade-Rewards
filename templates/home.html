@@ -43,23 +43,28 @@
         
     {% else %}
     <div style="width: 100%;">
-        <div style="width:45%; float:left; margin: 10px;">
-            <h1>Welcome to FairXChange</h1>
-            <h3>Get Paid, for Fair Trade</h3>
+        <div style="width:48%; float:left; margin: 5px;">
+            <h1>Welcome to FairXChange!</h1>
+            <h3>Get paid, for Fair trade. FairXChange is the rewards card that rewards everyone.</h3>
             {% comment %} Enter carousel of images here {% endcomment %}
-            <p style="line-height: normal;">
-                Thank you for choosing to support Fair Trade!
-                Through choosing Fair Trade products, you are supporting more ethical and sustainable trading practices. 
-                Look for different Fair Trade certifier logos around the SFU campus to ensure you are purchasing from trusted organizations. 
-                Fair Trades' demand based system allows the consumer to take control and voice their opinion in the production of goods.
+            <br>
+            <p style="line-height: 1.5;">
+                FairXChange is a loyalty points system, tailored to fair trade friendly products. For every dollar you spend on <a href="products.html">Fair trade products</a> at participating retailers,
+                you'll earn a point, which you can later redeem for discounts or donate them to farmers.
+            </p>
+            <br>
+            <p style="line-height: 1.5;">   
+                Through choosing <a href="products.html">Fair trade products</a>, you are supporting more ethical and sustainable trading practices. 
+                Look for different Fair trade certifier logos around the SFU campus to ensure you are purchasing from trusted organizations. 
+                Fair trades' demand based system allows the consumer to take control and voice their opinion in the production of goods.
             </p>
         </div>
-        <div style="width:45%' float:right; margin: 10px">
+        <div style="width:45%' float:right; margin: 5px">
             <img src="{% static 'images/coffee_heart.jpg' %}" width="50%" height="auto" style="padding-top: 10px">
         </div>
     </div>
         <div style="width: 100%; text-align: center;">
-        <a href='map.html'><button style="width: 50%; height:50px; margin:20px;">Find a store near you</button></a>
+        <a href='map.html'><button style="width: 50%; height:50px; margin:20px 45px 20px 0 ;">Find a store near you</button></a>
         </div>
     
         <div>
@@ -76,22 +81,21 @@
             </div>
             <div style="float: left; width: 33%; text-align: center;">
                 <img src="{% static 'images/two.png'%}" width="50px">
-                <h3 style="margin:10px">Purchase Fairtrade</h3>
-                <p>For every dollar you spend on <a href="products.html">Fairtrade products</a>, you'll
-                    receive points. It's that simple!
+                <h3 style="margin:10px">Shop Fair trade</h3>
+                <p>For every dollar you spend on <a href="products.html">Fair trade products</a>, you'll
+                    earn a point. It's that simple!
                 </p>
             </div>
             <div style="float: left; width: 33%; text-align: center;">
                 <img src="{% static 'images/three.png'%}" width="50px">
-                <h3 style="margin:10px">Get Paid for Fairtrade</h3>
-                <p>Once you collect enough points, you can exchange them for discounts off your next purchase.
-                    Feeling generous? You can pay it forward and donate your points instead!
+                <h3 style="margin:10px">Get Rewarded</h3>
+                <p>Exchange your points for discounts off your next purchase, or donate your points to Fairtrade farmers. Either way, its a win-win situation!
                 </p>
 
             </div>
             <br style="clear: left;" />
            </div>
-        <h2>Support Fairtrade Canada</h2>
+        <h2>Visit Fairtrade Canada</h2>
         <iframe src="https://www.fairtrade.ca/" title="Fairtrade Canada" style="width:100%; height:500px">
         </iframe>
     {% endif %} 
