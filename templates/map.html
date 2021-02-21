@@ -10,7 +10,7 @@
     {% endif %}
 {% endblock %}
 
-{% block content %}
+{% block header %}
 	<h3 class='label' style='margin-left:-1rem; margin-top: -2.5rem;'>
 		<span style='background: #f5f5f5; padding: 0 1rem; display: inline-block;'>
 			Find Participating Fairtrade Stores
@@ -28,7 +28,7 @@
 </div>
 {% endblock %}
 
-{% block header %} 
+{% block content %} 
 		{% load static %}
 		<div id="map"></div>
 		<script src="{% static 'js/map.js' %}"></script>
