@@ -6,10 +6,10 @@ python manage.py migrate
 
 Run the application:
 ```bash
-python manage.py runserver
-
 # optional — run in another console
-python manage.py liveserver
+python manage.py livereload
+
+python manage.py runserver
 ```
 
 ## Dependencies
