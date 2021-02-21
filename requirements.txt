@@ -40,7 +40,6 @@ mu-editor==1.0.3
 multidict==4.7.6
 nudatus==0.0.4
 numpy==1.18.3
-pandas==1.2.2
 parso==0.7.0
 pathtools==0.1.2
 pgzero==1.2
