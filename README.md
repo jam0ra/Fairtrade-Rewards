@@ -1,4 +1,4 @@
-# FairXChange #
+# FairXChange # Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 - - - -
 ## Getting Started ##
 Welcome to FairXChange, the rewards card that rewards everyone! 
