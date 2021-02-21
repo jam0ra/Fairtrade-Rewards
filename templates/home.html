@@ -1,4 +1,5 @@
 {% extends 'base.html' %} 
+{% load static %}
 
 {% block title %}Home{% endblock %} 
 
@@ -49,15 +50,16 @@
         </div>
         
     {% else %}
-
-        <h1>Welcome to Fair Trade Rewards</h1>
+        <h1>Welcome to FairXChange</h1>
+        <h3>Get Paid, for Fair Trade</h3>
         {% comment %} Enter carousel of images here {% endcomment %}
-        <p>
+        <p style="line-height: normal;">
             Thank you for choosing to support Fair Trade!
             Through choosing Fair Trade products, you are supporting more ethical and sustainable trading practices. 
             Look for different Fair Trade certifier logos around the SFU campus to ensure you are purchasing from trusted organizations. 
             Fair Trades' demand based system allows the consumer to take control and voice their opinion in the production of goods.
         </p>
+        <img src="{% static 'images/coffee_heart.jpg' %}" width="100%" height="auto" style="padding-top: 10px">
         <a href='map.html'><button>Find a store near you</button></a>
         <div>
             <p>Log in to view your account <a href="{% url 'login' %}">here</a></p>

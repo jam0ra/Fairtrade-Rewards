@@ -23,13 +23,13 @@
 {% endblock %}
 
 {% block content %}
-<h3 class='label' style='margin-left:5rem; margin-top: 2rem;'>
-    <span style='background: #f5f5f5; padding: 0 1rem; display: inline-block;'>
+<h3 class='label' style='margin-left:0.5rem; margin-top: 2rem;'>
+    <span style='background: #f5f5f5; display: inline-block;'>
         About Us
     </span>
 </h3>
 
-<div class='header-image' style='height: 0; min-height: 0; display:inline-block; margin: 0 -1.4rem -3rem; background: none'>
+<div class='header-image' style='height: 0; min-height: 0; display:inline-block; margin: 0 -1.4rem 2rem; background: none'>
     <div class='container'>
             <div style='background: white'>
                     <a href='{% url "home" %}'>Home</a>
@@ -38,5 +38,11 @@
             </div>
     </div>
 </div>
+
+<h2>Our Mission</h2>
+<p>FairXChange aims to incentivize and spread awareness about Fairtrade supporting products. TODO: Say stuff about connection</p>
+<br>
+<h2>Logo</h2>
+<p>The logo represents an exchange between a consumer and the producer, with a coffee bean in the center.</p>
 
 {% endblock %}
