@@ -83,7 +83,7 @@ h3 {
   font-size: 1.4rem; }
 
 /* type components */
-.label, #donate .initiatives__desc, #points .points-timeline__points, .nav__bottom .container > *, .nav .menu > *, button, .header-image .container a, #map .container a {
+.label, #modal .progress, #donate .initiatives__desc, #points .points-timeline__points, .nav__bottom .container > *, .nav .menu > *, button, .header-image .container a, #map .container a {
   text-transform: uppercase;
   font-family: 'Oswald';
   font-weight: bold;
@@ -151,7 +151,7 @@ h3 {
     color: rgba(255, 255, 255, 0.6);
     padding: 0.8rem 0;
     overflow: hidden; }
-    .nav__top .label, .nav__top #donate .initiatives__desc, #donate .nav__top .initiatives__desc, .nav__top #points .points-timeline__points, #points .nav__top .points-timeline__points, .nav__top .nav__bottom .container > *, .nav__bottom .nav__top .container > *, .nav__top .header-image .container a, .header-image .container .nav__top a, .nav__top #map .container a, #map .container .nav__top a, .nav__top button, .nav__top .nav .menu > *, .nav .nav__top .menu > * {
+    .nav__top .label, .nav__top #modal .progress, #modal .nav__top .progress, .nav__top #donate .initiatives__desc, #donate .nav__top .initiatives__desc, .nav__top #points .points-timeline__points, #points .nav__top .points-timeline__points, .nav__top .nav__bottom .container > *, .nav__bottom .nav__top .container > *, .nav__top .header-image .container a, .header-image .container .nav__top a, .nav__top #map .container a, #map .container .nav__top a, .nav__top button, .nav__top .nav .menu > *, .nav .nav__top .menu > * {
       font-size: 0.75rem; }
     .nav__top .container {
       display: flex;
@@ -321,6 +321,54 @@ h3 {
     #donate .initiatives__progress > *:last-child {
       margin-left: 2rem; }
       #donate .initiatives__progress > *:last-child::after {
+        content: 'goal'; }
+
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10; }
+  #modal .scroll-container {
+    overflow-y: scroll;
+    height: 100vh; }
+  #modal .content-container {
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+    background: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+    #modal .content-container .drop-cap {
+      float: left;
+      line-height: 85%;
+      margin-right: 0.2em;
+      width: .7em;
+      font-size: 400%;
+      font-family: georgia; }
+  #modal .progress {
+    font-size: 1.6rem;
+    line-height: 1;
+    display: flex;
+    margin: 0.6rem 0 1.2rem;
+    padding: 0.6rem 0 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    #modal .progress > * {
+      position: relative; }
+      #modal .progress > *::before {
+        content: 'pts';
+        font-size: 0.6em;
+        position: absolute;
+        top: 4px;
+        left: 105%; }
+      #modal .progress > *::after {
+        content: 'Raised';
+        display: block;
+        font-size: 0.8rem;
+        margin-top: 0.2rem; }
+    #modal .progress > *:last-child {
+      margin-left: 3rem; }
+      #modal .progress > *:last-child::after {
         content: 'goal'; }
 
 /*# sourceMappingURL=index.css.map */

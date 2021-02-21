@@ -32,7 +32,7 @@
     
             <div id='donate'>
                 <div class='initiatives' style='margin-top: 1rem'>
-                    <a class='initiatives__item' href='{% url "initiative.html" %}'>
+                    <a class='initiatives__item' href='#'>
                         <img src='http://placehold.it/500x400'/>
                         <div class='initiatives__desc'>
                             <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
@@ -42,8 +42,8 @@
                                 <span>10,000</span>
                             </div>
                         </div>
-                    </div>
-                    <a class='initiatives__item' href='{% url "initiative.html" %}'>
+                    </a>
+                    <a class='initiatives__item' href='#'>
                         <img src='http://placehold.it/500x400'/>
                         <div class='initiatives__desc'>
                             <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
@@ -53,8 +53,8 @@
                                 <span>10,000</span>
                             </div>
                         </div>
-                    </div>
-                    <a class='initiatives__item' href='{% url "initiative.html" %}'>
+                    </a>
+                    <a class='initiatives__item' href='#'>
                         <img src='http://placehold.it/500x400'/>
                         <div class='initiatives__desc'>
                             <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
@@ -64,7 +64,7 @@
                                 <span>10,000</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div style='text-align: center; padding: 1.2rem 0 1rem;'>
@@ -108,4 +108,58 @@
                 </div>
             </div>
         </div>
+
+        <div id='modal'>
+            <div class='scroll-container'>
+                <div class='content-container'>
+                    <h2 style='margin-bottom: 1.2rem;'>We’re sending 100 resuable masks to school children in Delhi, India. But we need your help!</h2>
+
+                    <img alt='initiative image' src='https://placehold.it/500x250' style='width: 100%;'/>
+
+                    <div class='progress'>
+                        <span>4073</span>
+                        <span>10,000</span>
+                    </div>
+
+                    <p style='margin-top: 1rem;'><span class='drop-cap'>R</span>ight now, masks are becoming more and more essential as we continue to navigate our daily lives during COVID-19. 
+    There are several strands of evidence supporting the efficacy of masks.
+    
+    One category of evidence comes from laboratory studies of respiratory droplets and the ability of various masks to block them. An experiment using high-speed video found that hundreds of droplets ranging from 20 to 500 micrometers were generated when saying a simple phrase, but that nearly all these droplets were blocked when the mouth was covered by a damp washcloth. Another study of people who had influenza or the common cold found that wearing a surgical mask significantly reduced the amount of these respiratory viruses emitted in droplets and aerosols.
+    
+    We’re one step closer to helping make the world a cleaner, safer one for all, and without the support of individuals like yourself, we wouldn’t be where we are today.
+    
+    Thank you Justin!</p>
+
+                    <br/><p>Sincerely,</p>
+                    <p style='font-size: 1.8rem; font-style:italic;'>Hailey Atwell</p>
+                    <div class='label'>Hailey Atwell, Program Coordinator</div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            (function(){
+                const inits = document.querySelectorAll('.initiatives__item')
+                const modal = document.getElementById('modal')
+
+                modal.style.display = "none";
+
+                function toggleModal() {
+                    if (modal.style.display === "none") {
+                        modal.style.display = "block";
+                    } else {
+                        modal.style.display = "none";
+                    }
+                }
+
+                modal.onclick = toggleModal
+    
+                inits.forEach(function(el) {
+                    el.addEventListener('click', function(e) {
+                        e.preventDefault()
+                        toggleModal()
+                    })
+                })
+            })()
+        </script>
 {% endblock %}
