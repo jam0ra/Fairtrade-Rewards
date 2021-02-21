@@ -6,9 +6,11 @@
 
 {% if user.is_authenticated %} 
     Hi {{ user.username }}!
+    <nav>
     <a href='points.html'><button>Points</button></a>
     <a href='donate.html'><button>Donate</button></a>
     <a href='map.html'><button>Map</button></a>
+    </nav>
     <a href="{% url 'logout' %}">Log Out</a>
     {% else %}
     <a href='map.html'><button>Map</button></a>
