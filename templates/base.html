@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>{% block title %} Fairtrade Rewards {% endblock %}</title>
-
     {% load static %}
     {% load sass_tags %}
+    <meta charset="utf-8" />
+    <link rel="icon" href="{% static 'images/fairxchange_circle.png'%}">
+    <title>{% block title %} Fairtrade Rewards {% endblock %}</title>
+
+   
 
     <base href="/"> 
     <link rel="stylesheet" type="text/css" href='{% sass_src "styles/index.scss" %}'/>
@@ -15,13 +17,19 @@
     <nav class='nav'>
       <div class='nav__top'>
         <div class='container'>
-          <a href = "#">
-            <img class='logo' alt='logo' src='{% static "images/fairtrade-logo.jpg" %}'/>
+          <a title="Home" href = "#">
+            <img class='logo' alt='logo' style="padding: 5px" src="{% static 'images/fairxchange_text.png'%}"/>
           </a>
           
 
           <div class='label' style='margin-left: 6.5rem; color: white;'>
-            <img style='width:24px; margin-right:0.2rem; margin-bottom:-1px;' alt='sfu' src='{% static "images/sfu-logo.png" %}'/> Partnership Program
+            <a title="SFU Fairtrade" href="http://www.sfu.ca/fairtrade.html" target="_blank">
+              <img style='width:24px; margin-right:0.2rem; margin-bottom:-1px;' alt='sfu' src='{% static "images/sfu-logo.png" %}'/> Partnership Program
+            </a>
+          </div>
+
+          <div class='menu' style='flex: 4; margin-right: -20px;'>
+            <a href='about.html'>About Us</a>
           </div>
 
           <div class='menu' style='flex: 1'>

@@ -9,3 +9,6 @@ def map(request):
 def points(request):
     return render(request, 'points.html', {})
 
+def about(request):
+    return render(request, 'about.html', {})
+
