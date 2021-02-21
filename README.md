@@ -1,4 +1,4 @@
-# FairXChange ![FairXChange Logo](https://github.com/jam0ra/Fairtrade-Rewards/blob/master/static/images/fairxchange_circle.png "FairXChange Logo")
+# FairXChange # <img src="https://github.com/jam0ra/Fairtrade-Rewards/blob/master/static/images/fairxchange_circle.png" alt="FairXChange Logo" width="30%" height="30%">  
 - - - -
 ## Getting Started ##
 Welcome to FairXChange, the rewards card that rewards everyone! 
