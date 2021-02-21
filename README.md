@@ -1,4 +1,5 @@
 # FairXChange #
+- - - -
 ## Getting Started ##
 Welcome to FairXChange, the rewards card that rewards everyone! 
 
