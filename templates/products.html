@@ -1,0 +1,52 @@
+{% extends 'base.html' %} 
+
+{% block title %}Home{% endblock %} 
+
+{% block nav_top %}
+    {% if user.is_authenticated %} 
+        <a href="{% url 'logout' %}">Log Out</a>
+    {% else %}
+        <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+    {% if user.is_authenticated %} 
+        <div class='header-image'>
+            <div class='container'>
+                <div style='background: white'>
+                    <!-- <a href='#'>Home</a> -->
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<h3 class='label' style='margin-left:0.5rem; margin-top: 2rem;'>
+    <span style='background: #f5f5f5; display: inline-block;'>
+        Products
+    </span>
+</h3>
+
+<div class='header-image' style='height: 0; min-height: 0; display:inline-block; margin: 0 -1.4rem 2rem; background: none'>
+    <div class='container'>
+            <div style='background: white'>
+                    <a href='{% url "home" %}'>Home</a>
+                    <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
+                    <a href='#'>Products</a>
+            </div>
+    </div>
+</div>
+
+<h2>Fairtrade Friendly Products</h2>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Bananas</li>
+    <li>Avocados</li>
+    <li>Ben & Jerry's Ice Cream</li>
+    <li>Cotton T-Shirts</li>
+    <li>Etc.</li>
+</ul>
+{% endblock %}
