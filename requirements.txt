@@ -61,7 +61,6 @@ PyQtChart==5.14.0
 pyserial==3.4
 python-dateutil==2.8.1
 pytz==2020.1
-pywin32==227
 pyzmq==19.0.0
 QScintilla==2.11.4
 qtconsole==4.3.1
