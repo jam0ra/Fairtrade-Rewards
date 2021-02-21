@@ -26,13 +26,13 @@ FairXChange is a loyalty points system, tailored to fair trade friendly products
 
 
 ## Challenges we Faced ##
-X,Y,Z
+As a beginner team at StormHacks 2021, we were faced with the challenge of allocating each of our skills efficiently to create this project in such a short time frame. We decided to use languages and frameworks that most of us were not too familiar with in order to push ourselves during these 24 hours. Time management became tough since the team was new to the hackathon environment. Overall, we are proud of creating an informative website that hopefully brings awareness to Fair trade.   
 
 ## What we learned ##
-X,Y,Z
+Through attending workshops and doing our own research, our team was able to gain awareness about Fair trade products. We learned that each time a Fair trade product is chosen, it has an impact, regardless of how small or large the purchase is. We hope that creating this program will not only incentivize supporting Fair trade, but will also make choosing these products a core value in our day to day lives.        
 
 ## What's next? ##
-X,Y,Z
+To make this program as accessible as we can, we would like to create a smartphone app so consumers are able to use this program on the go. Currently, FairXChange is focused on the SFU Burnaby Campus, but we would love to expand to accomodate more locations and campuses in the future.   
 
 ## Initial Set-up ##
 ```bash

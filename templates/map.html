@@ -2,18 +2,10 @@
 
 {% block title %}Map{% endblock %} 
 
-{% block nav_top %}
-    {% if user.is_authenticated %} 
-        <a href="{% url 'logout' %}">Log Out</a>
-    {% else %}
-        <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-{% endblock %}
-
 {% block header %}
 	<div class='header-image' style='height: 0; min-height: 0; display:inline-block; background: none'>
-		<div class='container'>
-				<h2 class='label' style='margin: 1rem 0 0.2rem;'>
+		<div class='container' style='z-index: 1'>
+				<h2 class='label' style='margin: 1rem 0 0;'>
 					Find a Participating Fairtrade Store
 				</h2>
 
@@ -26,7 +18,7 @@
 	</div>
 
 	{% load static %}
-	<div id="map" style='margin: -0.8rem 0 -9rem; z-index: -1'></div>
+	<div id="map" style='margin: 2rem 0 -9rem'></div>
 	<script src="{% static 'js/map.js' %}"></script>
 	<script async
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2Jt7h_rzqsex6iI_Ecx9FHWzleFQiSE&callback=initMap&libraries=&v=weekly"></script>
