@@ -33,6 +33,9 @@ button {
   button:hover {
     background: #f3bf00; }
 
+footer {
+  margin-top: 2rem; }
+
 /* components */
 .header-image {
   width: 100%;
@@ -56,7 +59,7 @@ h2 {
   font-size: 2.6rem; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 1.4rem; }
 
 /* type components */
 .label, #points .points-timeline__points, .nav__bottom .container > *, .nav .menu > *, button {
@@ -64,6 +67,11 @@ h3 {
   font-family: 'Oswald';
   font-weight: bold;
   letter-spacing: 0.5px; }
+
+.link {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: bold; }
 
 /* Layout Elems */
 .container {
@@ -177,6 +185,10 @@ h3 {
     border-radius: 100%;
     background: white;
     border: 2px solid #d1d1d1; }
+  #points .points-timeline__timeline .active::before {
+    background: var(--secondary);
+    border: none;
+    box-shadow: 0 0 6px rgba(255, 209, 39, 0.5); }
   #points .points-timeline__timeline::before {
     content: '';
     width: 100%;
@@ -187,5 +199,25 @@ h3 {
     left: 0;
     transform: scaleX(0.98);
     z-index: -1; }
+
+#points .incentive {
+  display: flex; }
+  #points .incentive__number {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-green);
+    color: #f9fbeb;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 2rem;
+    line-height: 1;
+    width: 2em;
+    height: 2em;
+    margin-top: 0.6em; }
+  #points .incentive__content {
+    flex: 1;
+    padding: 1rem; }
 
 /*# sourceMappingURL=index.css.map */

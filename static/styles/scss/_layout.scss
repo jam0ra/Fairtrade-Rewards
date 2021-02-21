@@ -163,6 +163,12 @@
 				}
 			}
 
+			.active::before {
+				background: var(--secondary);
+				border: none;
+				box-shadow: 0 0 6px rgba(#FFD127, 0.5);
+			} 
+
 			position: relative;
 			&::before {
 				content: '';
@@ -176,4 +182,29 @@
 			}
 		}
 	}
-}
+
+	.incentive {
+		display: flex;
+
+		&__number {
+			flex: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: var(--primary-green);
+			color: lighten(#C3D941, 40);
+			text-align: center;
+			border-radius: 100%;
+			font-size: 2rem;
+			line-height: 1;
+			width: 2em;
+			height: 2em; 
+			margin-top: 0.6em;
+		}
+
+		&__content {
+			flex: 1;
+			padding: 1rem;
+		}
+	}
+} 
