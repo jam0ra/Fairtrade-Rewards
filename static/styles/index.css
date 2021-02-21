@@ -50,6 +50,7 @@ footer {
   max-height: 250px;
   background: gray;
   background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   padding: 1rem 0.8rem; }
@@ -125,7 +126,7 @@ h3 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 1.2rem; }
   .gallery__image {

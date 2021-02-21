@@ -1,18 +1,10 @@
 {% extends 'base.html' %} 
 
-{% block title %}Points{% endblock %} 
-
-{% block nav_top %}
-    {% if user.is_authenticated %} 
-        <a href="{% url 'logout' %}">Log Out</a>
-    {% else %}
-        <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-{% endblock %}
+{% block title %}Points{% endblock %}
 
 {% block header %}
     {% if user.is_authenticated %} 
-        <div class='header-image'>
+        <div class='header-image' style='background-image: url("/static/images/banner-2.png");'>
             <div class='container'>
                 <div style='background: white'>
                     <a href='{% url "home" %}'>Home</a>

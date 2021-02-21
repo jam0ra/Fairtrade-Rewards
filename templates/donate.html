@@ -2,17 +2,9 @@
 
 {% block title %}Points{% endblock %} 
 
-{% block nav_top %}
-    {% if user.is_authenticated %} 
-        <a href="{% url 'logout' %}">Log Out</a>
-    {% else %}
-        <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-{% endblock %}
-
 {% block header %}
     {% if user.is_authenticated %} 
-        <div class='header-image'>
+        <div class='header-image' style='background-image: url("/static/images/banner-4.png");'>
             <div class='container'>
                 <div style='background: white'>
                     <a href="{% url 'home' %}">Home</a>
@@ -33,7 +25,7 @@
             <div id='donate'>
                 <div class='initiatives' style='margin-top: 1rem'>
                     <a class='initiatives__item' href='#'>
-                        <img src='http://placehold.it/500x400'/>
+                        <img src='/static/images/init-1.png'/>
                         <div class='initiatives__desc'>
                             <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
 
@@ -44,7 +36,7 @@
                         </div>
                     </a>
                     <a class='initiatives__item' href='#'>
-                        <img src='http://placehold.it/500x400'/>
+                        <img src='/static/images/init-2.png'/>
                         <div class='initiatives__desc'>
                             <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
 
@@ -55,7 +47,7 @@
                         </div>
                     </a>
                     <a class='initiatives__item' href='#'>
-                        <img src='http://placehold.it/500x400'/>
+                        <img src='/static/images/init-3.png'/>
                         <div class='initiatives__desc'>
                             <span style='color: var(--secondary);'>Send 100 reusable masks to school children in India</span>
 
@@ -114,7 +106,7 @@
                 <div class='content-container'>
                     <h2 style='margin-bottom: 1.2rem;'>We’re sending 100 resuable masks to school children in Delhi, India. But we need your help!</h2>
 
-                    <img alt='initiative image' src='https://placehold.it/500x250' style='width: 100%;'/>
+                    <img alt='initiative image' src='/static/images/init-detail.png' style='width: 100%;'/>
 
                     <div class='progress'>
                         <span>4073</span>
