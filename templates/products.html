@@ -15,7 +15,9 @@
         <div class='header-image'>
             <div class='container'>
                 <div style='background: white'>
-                    <!-- <a href='#'>Home</a> -->
+                    <a href='{% url "home" %}'>Home</a>
+                    <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
+                    <a href='#'>Products</a>
                 </div>
             </div>
         </div>
@@ -23,91 +25,28 @@
 {% endblock %}
 
 {% block content %}
-<h3 class='label' style='margin-left:0.5rem; margin-top: 2rem;'>
-    <span style='background: #f5f5f5; display: inline-block;'>
-        Products
-    </span>
-</h3>
+<h3 class='label'>Products</h3>
 
-<div class='header-image' style='height: 0; min-height: 0; display:inline-block; margin: 0 -1.4rem 2rem; background: none'>
-    <div class='container'>
-            <div style='background: white'>
-                    <a href='{% url "home" %}'>Home</a>
-                    <i class="fas fa-caret-right" style='font-size: 0.8rem; opacity: 0.5;'></i>
-                    <a href='#'>Products</a>
-            </div>
+<h2>Fairtrade Friendly Products</h2>
+<br/><br/>
+<div class='gallery'>
+    <div class='gallery__image'>
+        <img src="{%static 'images/coffee.jpg'%}" width=200 style='border-radius: 4px'>
+        <div style='display: flex; justify-content: space-between; align-items: center;'>
+            <h3 style='font-size: 1.2rem;'>Coffee</h3>
+            <span>
+                <i class="fas fa-handshake"
+                style='display: inline-block; border-radius: 100%; background: var(--primary-green); padding: 0.3em 0.2em;'>
+                </i>
+                <i class="fas fa-globe"
+                style='display: inline-block; border-radius: 100%; background: var(--primary-blue); padding: 0.3em 0.3em;'>
+                </i>
+                <i class="fas fa-donate"
+                style='display: inline-block; border-radius: 100%; background: var(--secondary); padding: 0.3em 0.3em;'>
+                </i>
+            </span>
+        </div>
     </div>
 </div>
-
-
-
-<h2>Fairtrade Friendly Products</h2>\
-<br>
-<div style="width:100%; margin-bottom: 100px;">
-    <div style="width: 50%; float:left;">
-        <h3>Coffee</h3>
-    </div>
-    <div style="width: 50%; float:right;"">
-        <img src="{%static 'images/coffee.jpg'%}" width = 200px>
-    </div>
-</div>
-
-<div style="width:100%; margin-bottom: 100px;">
-    <div style="width: 50%; float:left;">
-        <h3>Tea</h3>
-    </div>
-    <div style="width: 50%; float:right;"">
-        <img src="{%static 'images/coffee.jpg'%}" width = 200px>
-    </div>
-</div>
-
-<div style="width:100%; margin-bottom: 100px;">
-    <div style="width: 50%; float:left;">
-        <h3>Bananas</h3>
-    </div>
-    <div style="width: 50%; float:right;"">
-        <img src="{%static 'images/coffee.jpg'%}" width = 200px>
-    </div>
-</div>
-
-
-<div style="width:100%; margin-bottom: 100px;">
-    <div style="width: 50%; float:left;">
-        <h3>Avocados</h3>
-    </div>
-    <div style="width: 50%; float:right;"">
-        <img src="{%static 'images/coffee.jpg'%}" width = 200px>
-    </div>
-</div>
-
-
-<div style="width:100%; margin-bottom: 100px;">
-    <div style="width: 50%; float:left;">
-        <h3>Ben & Jerry's Ice Cream</h3>
-    </div>
-    <div style="width: 50%; float:right;"">
-        <img src="{%static 'images/coffee.jpg'%}" width = 200px>
-    </div>
-</div>
-
-<div style="width:100%; margin-bottom: 100px;">
-    <div style="width: 50%; float:left;">
-        <h3>Sugar</h3>
-    </div>
-    <div style="width: 50%; float:right;"">
-        <img src="{%static 'images/coffee.jpg'%}" width = 200px>
-    </div>
-</div>
-
-<div style="width:100%; margin-bottom: 100px;">
-    <div style="width: 50%; float:left;">
-        <h3>Peppercorn</h3>
-    </div>
-    <div style="width: 50%; float:right;"">
-        <img src="{%static 'images/coffee.jpg'%}" width = 200px>
-    </div>
-</div>
-
-
 
 {% endblock %}
