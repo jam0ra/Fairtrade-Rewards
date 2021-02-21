@@ -34,7 +34,10 @@ button {
     background: #f3bf00; }
 
 footer {
-  margin-top: 2rem; }
+  margin-top: 5rem;
+  padding: 4rem 0 4rem;
+  background: #333;
+  color: #dbdbdb; }
 
 /* components */
 .header-image {
@@ -72,6 +75,9 @@ h3 {
   display: inline-block;
   text-decoration: underline;
   font-weight: bold; }
+
+.small {
+  font-size: 0.8rem; }
 
 /* Layout Elems */
 .container {
