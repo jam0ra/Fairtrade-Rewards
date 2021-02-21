@@ -1,4 +1,4 @@
-# FairXChange # Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+# FairXChange ![FairXChange Logo](https://github.com/jam0ra/Fairtrade-Rewards/blob/master/static/images/fairxchange_circle.png/200x150 "FairXChange Logo")
 - - - -
 ## Getting Started ##
 Welcome to FairXChange, the rewards card that rewards everyone! 
