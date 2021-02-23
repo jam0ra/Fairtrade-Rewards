@@ -66,3 +66,6 @@ or
 ## Dependencies ##
 - [django-livereload-server](https://github.com/tjwalch/django-livereload-server)
 - [django-sass-processor](https://github.com/jrief/django-sass-processor)
+
+## Acknowledgements ##
+Special thanks to the <a href="https://sfusurge.com/" target="_blank" title="SFU Surge">SFU Surge</a> team for hosting StormHacks 2021!
