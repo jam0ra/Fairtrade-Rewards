@@ -1,10 +1,16 @@
 # FairXChange (Fairtrade Rewards) # 
 <img src="https://github.com/jam0ra/Fairtrade-Rewards/blob/master/static/images/fairxchange_circle.png" alt="FairXChange Logo" width="30%" height="30%">  
 
-## Getting Started ##  
+## About ##
 Welcome to FairXChange, the rewards card that rewards everyone! 
 Visit our website at:  
 https://fairtrade-rewards.herokuapp.com/
+
+FairXChange was created as part of StormHacks 2021. FairXChange won the "Best Fair Trade Initiative Project" award, for best spreading awareness about Fair Trade, improving the quality of Fair-Trade supply chains, and providing easier access to Fair Trade products.
+
+## Contributors ##
+The J<sup>3</sup>K team at StormHacks 2021:
+<a href="https://github.com/kcheung6" target="_blank" title="github.com/kcheung6">Katherine Cheung</a>, <a href="https://github.com/jam0ra" target="_blank" title="github.com/jam0ra">John Jamora</a>, <a href="https://github.com/KyuubiKnight" target="_blank" title="github.com/KyuubiKnight">Justin Lau</a>, and <a href="https://github.com/jsonyeung" target="_blank" title="github.com/jsonyeung">Jason Yeung</a>.
 
 ## Inspiration ##
 After attending the SFU Fair Trade workshop and conducting our own research, we’ve gathered Fairtrade’s three core values that truly makes it an organization worth supporting. For starters, they have a people over profit mentality, and we can see this front and center in the programs and initiatives that they’ve created. They’ve helped support a network of over 1.6 million farmers and workers in Fairtrade certified producer organizations, and support over 1,400 of these organizations across 73 countries. Their second core value is providing these laborers and families with financial freedom. This is accomplished through their minimum price guarantee, ensuring farmers that they can continue to manage and produce their crops sustainably, without having to worry about market fluctuation. Lastly, Fairtrade is committed to being transparent. As an organization that has the support of many stakeholders around the world, they conduct their business in a manner that reflects the people they support; humble, hardworking, and human.  
@@ -34,6 +40,8 @@ Through attending workshops and doing our own research, our team was able to gai
 ## What's next? ##
 To make this program as accessible as we can, we would like to create a smartphone app so consumers are able to use this program on the go. Currently, FairXChange is focused on the SFU Burnaby Campus, but we would love to expand to accomodate more locations and campuses in the future.   
 
+## Getting Started ##
+----
 ## Initial Set-up ##
 ```bash
 python manage.py migrate
@@ -53,9 +61,4 @@ python manage.py runserver
 - [django-livereload-server](https://github.com/tjwalch/django-livereload-server)
 - [django-sass-processor](https://github.com/jrief/django-sass-processor)
 
-## About ##
-FairXChange was created as part of StormHacks 2021. FairXChange won the "Best Fair Trade Initiative Project" award, for best spreading awareness about Fair Trade, improving the quality of Fair-Trade supply chains, and providing easier access to Fair Trade products.
 
-## Contributors ##
-The J<sup>3</sup>K team at StormHacks 2021:
-<a href="https://github.com/kcheung6" target="_blank" title="github.com/kcheung6">Katherine Cheung</a>, <a href="https://github.com/jam0ra" target="_blank" title="github.com/jam0ra">John Jamora</a>, <a href="https://github.com/KyuubiKnight" target="_blank" title="github.com/KyuubiKnight">Justin Lau</a>, and <a href="https://github.com/jsonyeung" target="_blank" title="github.com/jsonyeung">Jason Yeung</a>.
