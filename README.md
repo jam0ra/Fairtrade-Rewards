@@ -8,7 +8,7 @@ https://fairtrade-rewards.herokuapp.com/
 
 FairXChange was created as part of StormHacks 2021. FairXChange won the "Best Fair Trade Initiative Project" award, for best spreading awareness about Fair Trade, improving the quality of Fair-Trade supply chains, and providing easier access to Fair Trade products.
 
-Read more about our iniative <a href="https://www.figma.com/proto/V2SEisgVV5uYn1gnedGfyZ/StormHacks-2021?node-id=62%3A2&scaling=min-zoom" target="_blank" title="FairXChange - StormHacks 2021">here</a>. 
+Read more about our iniative <a href="https://www.figma.com/proto/V2SEisgVV5uYn1gnedGfyZ/StormHacks-2021?node-id=62%3A2&scaling=min-zoom" target="_blank" title="FairXChange - StormHacks 2021">here</a> or watch our <a href="https://youtu.be/RxnZz8mI3hg" target="_blank" title="FairXChange - StormHacks 2021">video.</a>
 
 ## Contributors ##
 The J<sup>3</sup>K team at StormHacks 2021:
