@@ -46,6 +46,8 @@ python manage.py livereload
 
 python manage.py runserver
 ```
+## Deployment ##
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jam0ra/Fairtrade-Rewards/)
 
 ## Dependencies ##
 - [django-livereload-server](https://github.com/tjwalch/django-livereload-server)
