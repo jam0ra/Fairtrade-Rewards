@@ -55,5 +55,5 @@ python manage.py runserver
 FairXChange was created as part of StormHacks 2021. FairXChange won the "Best Fair Trade Initiative Project" award, for best spreading awareness about Fair Trade, improving the quality of Fair-Trade supply chains, and providing easier access to Fair Trade products.
 
 ## Contributors ##
-The JJJK team at StormHacks 2021:
+The J<sup>3</sup>K team at StormHacks 2021:
 <a href="https://github.com/kcheung6" target="_blank">Katherine Cheung</a>, <a href="https://github.com/jam0ra" target="_blank">John Jamora</a>, <a href="https://github.com/KyuubiKnight" target="_blank">Justin Lau</a>, and <a href="https://github.com/jsonyeung" target="_blank">Jason Yeung</a>.
