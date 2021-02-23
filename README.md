@@ -2,7 +2,7 @@
 <img src="https://github.com/jam0ra/Fairtrade-Rewards/blob/master/static/images/fairxchange_circle.png" alt="FairXChange Logo" width="30%" height="30%">  
 
 ## About ##
-Welcome to FairXChange, the rewards card that rewards everyone! 
+Welcome to FairXChange, the rewards card that rewards everyone! <i>Get paid, for Fair Trade.</i>
 Visit our website at:  
 https://fairtrade-rewards.herokuapp.com/
 
