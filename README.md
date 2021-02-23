@@ -31,7 +31,7 @@ FairXChange is a loyalty points system, tailored to fair trade friendly products
 - JavaScript
 - Google Maps JavaScript API
 - Heroku
-- Figma
+- Figma (<a href="https://www.figma.com/proto/V2SEisgVV5uYn1gnedGfyZ/StormHacks-2021?node-id=39%3A481&scaling=min-zoom" target="_blank" title="FairXChange - StormHacks 2021">Prototype</a>)
 
 ## Challenges we Faced ##
 As a beginner team at StormHacks 2021, we were faced with the challenge of allocating each of our skills efficiently to create this project in such a short time frame. We decided to use languages and frameworks that most of us were not too familiar with in order to push ourselves during these 24 hours. Time management became tough since the team was new to the hackathon environment. Overall, we are proud of creating an informative website that hopefully brings awareness to Fair trade.   
