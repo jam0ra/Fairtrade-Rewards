@@ -52,4 +52,4 @@ python manage.py runserver
 - [django-sass-processor](https://github.com/jrief/django-sass-processor)
 
 ## About ##
-FairXChange was created as part of StormHacks 2021.
+FairXChange was created as part of StormHacks 2021. FairXChange won "Best Fair Trade Initiative Project".
