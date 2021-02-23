@@ -56,4 +56,4 @@ FairXChange was created as part of StormHacks 2021. FairXChange won the "Best Fa
 
 ## Contributors ##
 The J<sup>3</sup>K team at StormHacks 2021:
-<a href="https://github.com/kcheung6" target="_blank" name="github.com/kcheung6">Katherine Cheung</a>, <a href="https://github.com/jam0ra" target="_blank" name="github.com/jam0ra">John Jamora</a>, <a href="https://github.com/KyuubiKnight" target="_blank" name="github.com/KyuubiKnight">Justin Lau</a>, and <a href="https://github.com/jsonyeung" target="_blank" name="github.com/jsonyeung">Jason Yeung</a>.
+<a href="https://github.com/kcheung6" target="_blank" title="github.com/kcheung6">Katherine Cheung</a>, <a href="https://github.com/jam0ra" target="_blank" title="github.com/jam0ra">John Jamora</a>, <a href="https://github.com/KyuubiKnight" target="_blank" title="github.com/KyuubiKnight">Justin Lau</a>, and <a href="https://github.com/jsonyeung" target="_blank" title="github.com/jsonyeung">Jason Yeung</a>.
