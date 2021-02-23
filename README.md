@@ -3,6 +3,7 @@
 
 ## About ##
 Welcome to FairXChange, the rewards card that rewards everyone! <b><i>Get paid, for Fair Trade.</i><b>  
+  
 Visit our website at:  
 https://fairtrade-rewards.herokuapp.com/
 
