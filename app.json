@@ -1,0 +1,7 @@
+{
+  "name": "FairXChange",
+  "description": "The rewards card that rewards everyone. Get paid, for Fair Trade.",
+  "repository": "https://github.com/jam0ra/Fairtrade-Rewards/",
+  "logo": "https://github.com/jam0ra/Fairtrade-Rewards/blob/master/static/images/fairxchange_circle.png",
+  "keywords": ["django", "stormhacks2021", "python"]
+}
