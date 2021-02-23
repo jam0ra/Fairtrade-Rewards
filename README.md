@@ -2,7 +2,7 @@
 <img src="https://github.com/jam0ra/Fairtrade-Rewards/blob/master/static/images/fairxchange_circle.png" alt="FairXChange Logo" width="30%" height="30%">  
 
 ## About ##
-Welcome to FairXChange, the rewards card that rewards everyone! <b><i>Get paid, for Fair Trade.</i><b> Visit our <a href="https://fairtrade-rewards.herokuapp.com/" target="_blank" title="FairXChange">website</a>!  
+Welcome to FairXChange, the rewards card that rewards everyone! <b><i>Get paid, for Fair Trade!</i><b> Visit our <a href="https://fairtrade-rewards.herokuapp.com/" target="_blank" title="FairXChange">website</a>!  
 
 FairXChange was created as part of StormHacks 2021. FairXChange won the "Best Fair Trade Initiative Project" award, for best spreading awareness about Fair Trade, improving the quality of Fair-Trade supply chains, and providing easier access to Fair Trade products.
 
