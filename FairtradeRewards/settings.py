@@ -162,8 +162,7 @@ STATIC_URL = "static/"
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
-# Enable WhiteNoise's GZip compression of static assets.
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 SASS_PROCESSOR_ROOT = BASE_DIR / 'static'
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
