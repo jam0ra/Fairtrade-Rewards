@@ -44,6 +44,7 @@ To make this program as accessible as we can, we would like to create a smartpho
 ----
 ## Initial Set-up ##
 ```bash
+python install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
